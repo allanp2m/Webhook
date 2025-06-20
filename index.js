@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+console.log("🚀 Starting server - versão TESTE customizada!");
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
