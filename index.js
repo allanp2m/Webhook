@@ -7,8 +7,7 @@ console.log("🚀 Starting server!");
 app.use(express.json());
 
 app.post("/webhook", (req, res) => {
-  console.log("🔥 Webhook RECEBIDO!");
-  console.log("Body:", JSON.stringify(req.body, null, 2));
+  console.log(JSON.stringify(req.body, null, 2));
   res.status(200).send("Recebido!");
 });
 
