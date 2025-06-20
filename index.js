@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.post("/webhook", (req, res) => {
   console.log("🔥 Webhook RECEBIDO!");
   console.log("Headers:", req.headers);
-  console.log("Body:", req.body);
+  console.log("Body:", JSON.stringify(req.body, null, 2));
   res.status(200).send("Recebido!");
 });
 
